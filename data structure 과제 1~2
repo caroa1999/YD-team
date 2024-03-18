@@ -1,0 +1,30 @@
+과제 1
+#include <stdio.h>
+
+int main(void) {
+	char* ptr[] = { {"Korea"}, {"Seoul"}, {"Mapo"},{"152번지 2/3"} };
+
+	for (int i = 0; i < 4; i++) {
+		printf("%s\n", ptr[i]);
+	}
+	return 0;
+}
+
+과제 2
+#include <stdio.h>
+
+int main(void) {
+
+	char str[100];
+
+
+	printf("문자열을 입력하세요 : "); // korea!
+	scanf_s("%s", str, sizeof(str));
+
+	printf("\n");
+	printf("입력된 문자열은 \n\"%s\"\n입니다.", str);
+
+	printf("입력된 문자열의 길이 : %d\n", strlen(str));
+
+	return 0;
+}
